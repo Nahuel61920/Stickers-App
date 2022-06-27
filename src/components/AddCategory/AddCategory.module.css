@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputSearch {
+    Width: 95%;
+    font-size: 1.3rem;
+    color: rgb(12, 30, 88);
+}
+.error {
+    color: red;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
