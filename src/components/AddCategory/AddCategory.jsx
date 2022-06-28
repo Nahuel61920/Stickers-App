@@ -27,10 +27,10 @@ export const AddCategory = ({setcategories}) => {
 
     setTimeout(() => {
         setError(false)
-    }, 5000)
+    }, 3000)
 
     return (
-        <>
+        <div className={styled.formContainer}>
             <form onSubmit={ handleSubmit } className={styled.form}>
                 <input 
                     type="text" 
@@ -39,9 +39,10 @@ export const AddCategory = ({setcategories}) => {
                     className={styled.inputSearch}
                     placeholder="Search..."
                 />
+                <button type="submit" className={styled.btn}>Search</button>
             </form>
             { error ? <p className={styled.error}>El campo no puede estar vacio...</p> : ""}
-        </>
+        </div>
     )
 }
 
