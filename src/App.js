@@ -1,29 +1,22 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
-import { AddCategory } from './components/AddCategory/AddCategory';
-import { StickersGrid } from './components/StikersGrid/StickersGrid';
+import { AddCategory } from "./components/AddCategory/AddCategory";
+import { StickersGrid } from "./components/StikersGrid/StickersGrid";
 
 function App() {
-
-  const [categories, setcategories] = useState(
-    ["Stikers"]
-  );
+  const [categories, setcategories] = useState(["Stikers"]);
 
   return (
     <div className="App">
-      <header >
+      <header>
         <h1>StickersApp</h1>
-        <AddCategory setcategories={ setcategories }/>
+        <AddCategory setcategories={setcategories} />
       </header>
 
-
       <ol>
-        {categories.map(item => (
-          <StickersGrid 
-            item={item} 
-            key={item} 
-          />
+        {categories.map((item) => (
+          <StickersGrid item={item} key={item} />
         ))}
       </ol>
     </div>
